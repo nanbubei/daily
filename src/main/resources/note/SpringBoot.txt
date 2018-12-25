@@ -1,0 +1,21 @@
+
+pom.xml添加:
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.1.RELEASE</version>
+    </parent>
+(完事儿了...???)
+
+然后加上springboot的各种starter, 比如:
+web项目的话添加SpringBoot web组件依赖。即集成springmvc。各种版本号会从parent中拿.
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+springboot不推荐使用jsp, 推荐thymeleaf:
+    <dependency>
+        <groupId>nz.net.ultraq.thymeleaf</groupId>
+        <artifactId>thymeleaf-layout-dialect</artifactId>
+    </dependency>
+...等
