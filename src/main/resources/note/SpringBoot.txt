@@ -15,7 +15,7 @@ web项目的话添加SpringBoot web组件依赖。即集成springmvc。各种版
     </dependency>
 springboot不推荐使用jsp, 推荐thymeleaf:
     <dependency>
-        <groupId>nz.net.ultraq.thymeleaf</groupId>
-        <artifactId>thymeleaf-layout-dialect</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-thymeleaf</artifactId>
     </dependency>
 ...等

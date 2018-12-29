@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!--使用命名空间：xmlns:th="http://www.thymeleaf.org" 否则编译器没有代码提示。
+    解析后生成的页面源码中不会出命名空间信息
+-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h2 style="color: #00ff11;">th:text</h2>
+    <h3>设置当前元素的文本内容，不会转义html标签，当变量值不存在时不报错</h3>
+    <h3>标签中原文本内容将会被替换，这样的话很好的做到了前后端分离。这样前端将模拟的数据放到标签中展示，等后台开发好了使用th:text就会覆盖原文本内容，根本就不用删除原文本内容</h3>
+    th:text="${name}"========<span th:text="${name }"/>    <br/>
+</body>
+</html>

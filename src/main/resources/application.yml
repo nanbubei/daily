@@ -1,0 +1,45 @@
+server:
+  port: 8080
+  #servlet:
+   # context-path: /th
+spring:
+  thymeleaf:
+    #thymeleaf模板文件后缀名，默认为.html,可以修改成其他后缀名
+    suffix: .html
+    #存放模板文件的目录。默认为classpath:/templates/。
+    #可以指定多个，用逗号隔开，如：prefix: classpath:/templates/,classpath:/templates2/
+    #放到templates目录的原因是：该目录是安全的，意味着该目录下的内容是不允许外界直接访问的
+    prefix: classpath:/templates/
+    #是否开启缓存，开发阶段要设置为false，即关闭。默认值为true
+    cache: false
+    #编码格式，默认值就是UTF-8。保持默认即可。
+    encoding: UTF-8
+    #设置模板采用的页面规格。如HTML、HTML5等等。springboot2.0前默认值为HTML5；2.0版本后默认值为HTML
+    #此属性可选值，在TemplateMode模具类中有定义。一般保持默认即可。
+    mode: HTML
+    #是否在呈现模板之前检查模板是否存在，默认值为true。保持默认即可
+    check-template: true
+    #是否检查模板位置是否存在。默认为true。保持默认即可
+    check-template-location: true
+    #是否启用thymeleaf模板解析，默认为ture，使用thymeleaf的话就保持默认即可。
+    enabled: true
+    #在SpringEL表达式中启用SpringEL编译器。默认为false。
+    enable-spring-el-compiler: false
+    
+    #设置不需要被解析视图。默认没有，多个以逗号分隔。被指定的这些视图将不被解释使用，跟没有一样
+    #      如excluded-view-names: test1 当有controller return "test1"时，就会是404。
+    #此处需要注意一点，当excluded-view-names: test1时，请求的controller路径不要也是/test1否则会出现循环。这里有介绍：https://www.cnblogs.com/chry/p/6240965.html
+    #excluded-view-names: 
+    
+    #链中模板解析器的顺序。默认为第一个，即从1开始。基本上不用配置，除非自定义了解析器后，才需要设置额外的TemplateResolver
+    #template-resolver-order: 
+    
+    #设置可以被解析的视图名称列表，以逗号,分隔
+    #view-names:
+    
+    
+    #content-type:   2.0后content-type改为了servlet.content-type
+    servlet:
+      #设置content-type，默认值为text/html，保持默认即可。
+      content-type: text/html
+   
