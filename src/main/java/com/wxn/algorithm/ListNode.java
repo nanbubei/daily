@@ -1,5 +1,9 @@
 package com.wxn.algorithm;
 
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
 /**
  * 链表
  */
@@ -46,14 +50,24 @@ public class ListNode {
     }
 
     public static void main(String[] args) {
-        Node l1 = new Node(1);
-        l1.next = new Node(2);
-        l1.next.next = new Node(5);
-        Node l2 = new Node(3);
-        l2.next = new Node(4);
-        l2.next.next = new Node(6);
-        Node l3 = mergeTwoLists(l1, l2);
-        System.out.println(l3.toString());
+//        Node l1 = new Node(1);
+//        l1.next = new Node(2);
+//        l1.next.next = new Node(5);
+//        Node l2 = new Node(3);
+//        l2.next = new Node(4);
+//        l2.next.next = new Node(6);
+//        Node l3 = mergeTwoLists(l1, l2);
+//        System.out.println(l3.toString());
+    }
+
+    private static String setToString(Set<String> values) {
+        StringBuffer buffer = new StringBuffer(",-1,");
+        if(values == null || values.size() == 0)
+            return buffer.toString();
+        Iterator it = values.iterator();
+        while(it.hasNext())
+            buffer.append(it.next().toString() + ",");
+        return buffer.toString();
     }
 
     /**
