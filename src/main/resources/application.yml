@@ -25,15 +25,15 @@ spring:
     enabled: true
     #在SpringEL表达式中启用SpringEL编译器。默认为false。
     enable-spring-el-compiler: false
-    
+
     #设置不需要被解析视图。默认没有，多个以逗号分隔。被指定的这些视图将不被解释使用，跟没有一样
     #      如excluded-view-names: test1 当有controller return "test1"时，就会是404。
     #此处需要注意一点，当excluded-view-names: test1时，请求的controller路径不要也是/test1否则会出现循环。这里有介绍：https://www.cnblogs.com/chry/p/6240965.html
-    #excluded-view-names: 
-    
+    #excluded-view-names:
+
     #链中模板解析器的顺序。默认为第一个，即从1开始。基本上不用配置，除非自定义了解析器后，才需要设置额外的TemplateResolver
-    #template-resolver-order: 
-    
+    #template-resolver-order:
+
     #设置可以被解析的视图名称列表，以逗号,分隔
     #view-names:
     
