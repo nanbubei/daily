@@ -1,0 +1,4 @@
+BF:Brute Force (暴力匹配)
+
+RK:Rabin-Karp
+
