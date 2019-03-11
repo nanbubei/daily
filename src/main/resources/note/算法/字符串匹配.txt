@@ -2,3 +2,18 @@ BF:Brute Force (暴力匹配)
 
 RK:Rabin-Karp
 
+
+在'abcdefg'中找'def'
+主串:'abcdefg',
+模式串:'efg'
+
+BM:Boyer-Moore
+坏字符匹配:
+模式串从后往前匹配;(以前的顺序是e-f-g, 现在的顺序是g-f-e)
+当遇到不匹配的情况,比如第一次匹配g和c对比,发现c不能匹配.这里c被称为#坏字符#
+然后发现c在模式串中不存在,模式串可以向后滑动3位,继续匹配def和def
+
+
+
+
+
