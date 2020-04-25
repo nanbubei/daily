@@ -39,14 +39,14 @@ public class ListNode {
      * -------------------------
      */
     public static Node reverse(Node head) {
-        Node newhead = null, temp;
+        Node newHead = null, temp;
         while(head != null) {
             temp = head;
             head = head.next;
-            temp.next = newhead;
-            newhead = temp;
+            temp.next = newHead;
+            newHead = temp;
         }
-        return newhead;
+        return newHead;
     }
 
     public static void main(String[] args) {
