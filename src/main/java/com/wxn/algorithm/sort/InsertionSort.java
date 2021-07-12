@@ -1,5 +1,7 @@
 package com.wxn.algorithm.sort;
 
+import org.apache.ibatis.reflection.ArrayUtil;
+
 /**
  * 插入 - O(n²) O(1) 原地
  */
@@ -34,6 +36,14 @@ public class InsertionSort {
             }
             nums[j + 1] = value;
         }
+    }
 
+
+    public static void sort1(int[] nums) {
+    }
+    public static void main(String[] args) {
+        int[] nums = {2, 2, 1, 5, 6, 8, 1};
+        sort1(nums);
+        System.out.println(ArrayUtil.toString(nums));
     }
 }

@@ -1,5 +1,7 @@
 package com.wxn.algorithm.sort;
 
+import org.apache.ibatis.reflection.ArrayUtil;
+
 /**
  * 冒泡-O(n²) O(1) 原地
  */
@@ -57,4 +59,15 @@ public class BubbleSort {
             if(! flag) { break;}
         }
     }
+
+    public static void sortAgain(int[] nums) {
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 4, 5, 6, 8, 1};
+        sortAgain(nums);
+        System.out.println(ArrayUtil.toString(nums));
+    }
+
+
 }
